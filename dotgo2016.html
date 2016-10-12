@@ -51,12 +51,12 @@ taking two since they were in short supply but I had the legitimate excuse
 that Sue my partner (and fellow programmer) would want one. 
 
 <p> We took a box at on the first floor which overlooked the stage and settled
-down.  The Master of Ceremonies introduced himself on stage and presented "Le
-Gopher" -- a mysterious cloaked figure -- who spoke with a booming voice and
-was unveiled to reveal a massive (well over average human size) gopher stuffed
-giant.
+down.  The Master of Ceremonies introduced himself on stage and presented <i>Le
+Gopher"</i> &mdash;a mysterious cloaked figure &mdash; who spoke with a booming
+voice and was unveiled to reveal a massive (well over average human size)
+gopher stuffed giant.
 
-<p> Dave Cheney spoke first about "First-class functions" and credited as
+<p> <b>Dave Cheney</b> spoke first about "First-class functions" and credited as
 inspiration a Rob Pike Blog:
 
 <p><a href="https://commandcenter.blogspot.co.uk/2014/01/self-referential-functions-and-design.html"> https://commandcenter.blogspot.co.uk/2014/01/self-referential-functions-and-design.html</a>
@@ -79,7 +79,7 @@ passing each operation as parameters to this function it could be refactored to
 look nicer and allow new operations to be more easily added. He also wisely
 encouraged restraint in the use of first class functions.
 
-<p> Damian Gryski then spoke about memory allocations, caches and performance:
+<p> <b>Damian Gryski</b> then spoke about memory allocations, caches and performance:
 
 <p><a href="https://github.com/dgryski/talks/tree/master/dotgo-2016">
 https://github.com/dgryski/talks/tree/master/dotgo-2016
@@ -88,8 +88,8 @@ https://github.com/dgryski/talks/tree/master/dotgo-2016
 <p> He gave some suggestions for trying to fit data in caches but concluded
 by saying in most cases just using simpler algorithms was better.
 
-<p> Then followed Dmitri Shuralyov speaking about GopherJS -- a compiler which
-converted Go to Javascript -- which I found quite exciting. As a server-side
+<p> Then followed <b>Dmitri Shuralyov</b> speaking about GopherJS &mdash; a compiler which
+converted Go to Javascript &mdash; which I found quite exciting. As a server-side
 programmer I liked the idea of being able to avoid javascript and write Go to
 run as Javascript and being able to access the DOM etc. He quoted the examples
 of the frontend and backend being able to share the same business logic code
@@ -107,11 +107,12 @@ https://dmitri.shuralyov.com/projects/Hover-Demo/
 
 <p>(takes a little time to load!)
 
-<p>Péter Szilágyi spoke about Ethereum -- a blockchain (like Bitcoin) based system
-where you could run programs.  They had Denial of Service (DoS) issues last month
-based on caching bugs but he was able to fix this with immutability in Go. Go
-didn't have direct support for immutability but strings (and not slices) were
-immutable.  Also he was able to make structs immutable indirectly.
+<p><b>Péter Szilágyi</b> spoke about Ethereum &mdash; a blockchain (like
+Bitcoin) based system where you could run programs.  They had Denial of Service
+(DoS) issues last month based on caching bugs but he was able to fix this with
+immutability in Go. Go didn't have direct support for immutability but strings
+(and not slices) were immutable.  Also he was able to make structs immutable
+indirectly.
 
 <p>
 <p><a href="https://ethereum.karalabe.com/talks/2016-dotgo.html">
@@ -131,7 +132,7 @@ conference organisation was well above average (and I've been to many tech
 conferences).  Many of us, including myself, had our photos taken with "Le
 Gopher" up on stage during this break.
 
-<p> We then had four lightning talks. Simone Carletti told us that using
+<p> We then had four lightning talks. <b>Simone Carletti</b> told us that using
 Go to develop a cross-platform API had led to better API design for the other
 languages:
 
@@ -139,24 +140,24 @@ languages:
 https://dnsimple.com/dotgo
 </a>
 
-<p> Lucas Clemente talked about Google's fast QUIC (HTTP/2.0 over UDP) and his
+<p> <b>Lucas Clemente</b> talked about Google's fast QUIC (HTTP/2.0 over UDP) and his
 implementation::
 
 <p><a href="https://github.com/lucas-clemente/quic-go">
 https://github.com/lucas-clemente/quic-go
 </a>
 
-<p> Janaa Burcu Dogan gave an excellent description of useful flags to pass to the
+<p> <b>Janaa Burcu Dogan</b> gave an excellent description of useful flags to pass to the
 Go build chain tools.
 
 <p><a href="http://go-talks.appspot.com/github.com/rakyll/talks/gcinspect/talk.slide#1">
 http://go-talks.appspot.com/github.com/rakyll/talks/gcinspect/talk.slide#1
 </a>
 
-<p> Elias Naur spoke about Gomobile and told us it was now possible to directly
+<p> <b>Elias Naur</b> spoke about Gomobile and told us it was now possible to directly
 call Android Java and IOS Objective C from within Go.
 
-<p> One of the conference highlights was probably Kelsey Hightower talking about
+<p> One of the conference highlights was probably <b>Kelsey Hightower</b> talking about
 "Self-deploying Go apps". A lot of speakers had shown kubernetes in use but he had
 taken this one step further to create his Kargo library which allowed this
 functionality to be embedded within a Go app itself. 
@@ -170,7 +171,7 @@ deployment demos to "rock the temple" of the Demo Gods (who didn't seem to mind
 too much) and show now the world of many computers could be treated as just one
 computer.
 
-<p> Some more lightning talks followed. Javier Provecho Fernández told us how to
+<p> Some more lightning talks followed. <b>Javier Provecho Fernández</b> told us how to
 produce smaller Go binaries by stripping the binaries.  Using the UNIX strip
 was wrong (which explained to me why OpenBSD's strip on Go binaries had
 actually produced *larger* binaries when I tried it!) but rather you should 
@@ -184,7 +185,7 @@ zealous than before but I remember a lightning talk about:
 https://github.com/sbinet/pygo
 </a>
 
-<p>and Rhys Hiltner from Twich spoke on using 
+<p>and <b>Rhys Hiltner</b> from Twich spoke on using 
 
 <p><a href="https://golang.org/pkg/runtime/trace/">
 https://golang.org/pkg/runtime/trace/
@@ -193,11 +194,11 @@ https://golang.org/pkg/runtime/trace/
 <p>to debug a production issue and also spoke of finding a Garbage Collection bug
 in Go itself (which would be explained in a future Twich video!).
 
-<p> Katrina Owen gave a nice example of code refactoring a zombie game (example
+<p> <b>Katrina Owen<b> gave a nice example of code refactoring a zombie game (example
 cunningly rewritten to hide the guilty!) using the Flocking Rule and, sorry it
 has to be said, some quite ugly slide fonts!
 
-<p> Brad Rydzewski talked about how to use plugins (again something more associated
+<p> <b>Brad Rydzewski</b> talked about how to use plugins (again something more associated
 with dynamic languages than static). He had a nice way of wrapping calls to
 external binaries using "net/rpc" for both os/exec and "docker run" and hosting
 external plugins on github as a convenient registry and showed us his Drone CI
@@ -207,7 +208,7 @@ system as an example:
 https://github.com/drone/drone
 </a>
 
-<p> Matthew Holt, the author of caddyserver, talked about using Go with ACME (which
+<p> <b>Matthew Holt</b>, the author of caddyserver, talked about using Go with ACME (which
 is Let's Encrypt API to automatically provision SSL certs).  The talk was a
 good one, practical, useful and certainly was effective in showing how much
 easier things had become than manual provision. He also gave reviews of
@@ -218,7 +219,7 @@ little uncritical of the existing SSL infrastructure using trusted 3rd parties
 (like issues with some of the root CAs!). Self signed can work with a web 
 of trust.
 
-<p> The last talk was Robert Griesemer, one of the original Go authors, who gave a
+<p> The last talk was <b>Robert Griesemer</b>, one of the original Go authors, who gave a
 superb talk on "Prototype your design!" using the example of how he was
 prototyping a new feature (multi-dimensional slices useful for matrices) with
 minimal modification of the existing Go compiler.  He certainly explained
